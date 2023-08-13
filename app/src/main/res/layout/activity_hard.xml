@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hard_level_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0558FF"
+    android:orientation="vertical"
+    tools:context=".ui.HardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dash">
+
+        <FrameLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_dash">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_dash"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/arrow_back"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            style="@style/STROKE"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:id="@+id/text_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="@color/white"
+                android:textSize="23sp" />
+
+        </LinearLayout>
+
+        <Chronometer
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/STROKE"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="100"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+        <FrameLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_musicOn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/ic_volume_off"
+                tools:ignore="SpeakableTextPresentCheck,DuplicateClickableBoundsCheck" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_main_menu_layout">
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="wrap_content"
+            android:background="@drawable/bg_stroked_item"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn1"
+                style="@style/GameItemEasy"
+                android:text="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn2"
+                style="@style/GameItemEasy"
+                android:layout_toRightOf="@id/btn1"
+                android:text="2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn3"
+                style="@style/GameItemEasy"
+                android:layout_toRightOf="@id/btn2"
+                android:text="3" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn4"
+                style="@style/GameItemEasy"
+                android:layout_toRightOf="@id/btn3"
+                android:text="4" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn5"
+                style="@style/GameItemEasy"
+                android:layout_toRightOf="@id/btn4"
+                android:text="5" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn6"
+                style="@style/GameItemEasy"
+                android:layout_below="@id/btn1"
+                android:text="6" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn7"
+                style="@style/GameItemEasy"
+                android:layout_below="@id/btn2"
+                android:layout_toRightOf="@id/btn6"
+                android:text="7" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn8"
+                style="@style/GameItemEasy"
+                android:layout_below="@id/btn3"
+                android:layout_toRightOf="@id/btn7"
+                android:text="8" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn9"
+                style="@style/GameItemEasy"
+                android:layout_below="@id/btn4"
+                android:layout_toRightOf="@id/btn8"
+                android:text="9" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn10"
+                style="@style/GameItemEasy"
+                android:layout_below="@id/btn5"
+                android:layout_toRightOf="@id/btn9"
+                android:text="10" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn11"
+                style="@style/GameItemEasy"
+                android:layout_below="@id/btn6"
+                android:text="11" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn12"
+                style="@style/GameItemEasy"
+                android:layout_below="@id/btn7"
+                android:layout_toRightOf="@id/btn11"
+                android:text="12" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn13"
+                style="@style/GameItemEasy"
+                android:layout_below="@id/btn8"
+                android:layout_toRightOf="@id/btn12"
+                android:text="13" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn14"
+                style="@style/GameItemEasy"
+                android:layout_below="@id/btn9"
+                android:layout_toRightOf="@id/btn13"
+                android:text="14" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn15"
+                style="@style/GameItemEasy"
+                android:layout_below="@id/btn10"
+                android:layout_toRightOf="@id/btn14"
+                android:text="15" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn16"
+                style="@style/GameItemEasy"
+                android:layout_below="@id/btn11"
+                android:text="16" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn17"
+                style="@style/GameItemEasy"
+                android:layout_below="@id/btn12"
+                android:layout_toRightOf="@id/btn16"
+                android:text="17" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn18"
+                style="@style/GameItemEasy"
+                android:layout_below="@id/btn13"
+                android:layout_toRightOf="@id/btn17"
+                android:text="18" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn19"
+                style="@style/GameItemEasy"
+                android:layout_below="@id/btn14"
+                android:layout_toRightOf="@id/btn18"
+                android:text="19" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn20"
+                style="@style/GameItemEasy"
+                android:layout_below="@id/btn15"
+                android:layout_toRightOf="@id/btn19"
+                android:text="20" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn21"
+                style="@style/GameItemEasy"
+                android:layout_below="@id/btn16"
+                android:text="21" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn22"
+                style="@style/GameItemEasy"
+                android:layout_below="@id/btn17"
+                android:layout_toRightOf="@id/btn21"
+                android:text="22" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn23"
+                style="@style/GameItemEasy"
+                android:layout_below="@id/btn18"
+                android:layout_toRightOf="@id/btn22"
+                android:text="23" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn24"
+                style="@style/GameItemEasy"
+                android:layout_below="@id/btn19"
+                android:layout_toRightOf="@id/btn23"
+                android:text="24" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnEmpty"
+                style="@style/GameItemEasy"
+                android:layout_below="@id/btn20"
+                android:layout_toRightOf="@id/btn24"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_restart"
+            style="@style/STROKE"
+            android:layout_width="0dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Restart"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_result"
+            style="@style/STROKE"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="results"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_finish"
+            style="@style/STROKE"
+            android:layout_width="0dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="finish"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
